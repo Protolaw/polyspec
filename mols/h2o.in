@@ -1,0 +1,52 @@
+&CONTROL
+calculation='scf'
+title='H2O'
+prefix='H2O'
+verbosity='high'
+restart_mode='from_scratch'
+nstep=1000
+iprint=1
+tstress=.true.
+tprnfor=.true.
+disk_io='default'
+pseudo_dir='/afs/enea.it/software/qu_esp/pseudo/'
+outdir='./your/scratch_dir/',
+tstress=.true.
+tprnfor=.true.
+forc_conv_thr=1.0d-4
+etot_conv_thr=1.0d-5
+/
+&SYSTEM
+ibrav = 12,
+a = 20.000,
+b = 20.000,
+c= 20.000,
+cosab=-0.500000,
+nat = 3,
+ntyp = 2,
+ecutwfc = 60.0 ,
+ecutrho = 480.0 ,
+smearing = 'marzari-vanderbilt' ,
+nspin=1,
+occupations = 'smearing' ,
+degauss = 0.001,
+/
+&ELECTRONS
+electron_maxstep = 100,
+conv_thr = 1.0d-12 ,
+mixing_mode = 'plain' ,
+mixing_beta = 0.3d0 ,
+/
+&IONS
+ion_dynamics='bfgs'
+upscale=20.0
+/
+ATOMIC_SPECIES
+O 15.999 O.pz-rrkjus.UPF
+H 1.0079 H.pz-rrkjus.UPF
+ATOMIC_POSITIONS angstrom
+O 2.525856153 1.482855778 8.928868428
+H 2.241743628 2.141988100 9.587993065
+H 3.499400219 1.513156121 8.959138507
+K_POINTS automatic
+1 1 1 0 0 0
