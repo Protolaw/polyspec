@@ -112,9 +112,21 @@ ipython_config.py
 
 # Mine
 *.csv
+<<<<<<< HEAD
 aaa/*
 mols/*.in
 *.png
 Raman_11_model
 time_temp_*
 
+=======
+CO2/
+H2S/
+NH3/
+SO2/
+env/
+images/
+inp_mols/
+raman_fortran.out
+mols/
+>>>>>>> 253eb03895995565f06a1f012caa4a373303aea2
