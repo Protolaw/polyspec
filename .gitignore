@@ -112,5 +112,12 @@ ipython_config.py
 
 # Mine
 *.csv
-
-
+CO2/
+H2S/
+NH3/
+SO2/
+env/
+images/
+inp_mols/
+raman_fortran.out
+mols/
