@@ -112,5 +112,9 @@ ipython_config.py
 
 # Mine
 *.csv
-
+aaa/*
+mols/*.in
+*.png
+Raman_11_model
+time_temp_*
 
